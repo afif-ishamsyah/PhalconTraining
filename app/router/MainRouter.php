@@ -22,7 +22,50 @@ class MainRouter extends Group
         $this->add(
             '/',
             [
-                'action' => 'helloworld'
+                'action' => 'read',
+            ]
+        );
+
+        $this->add(
+            '/form',
+            [
+
+                'action'     => 'form',
+            ]
+        );
+
+        $this->add(
+            '/create',
+            [
+                'action'     => 'create',
+            ]
+        );
+
+        $this->add(
+            '/read',
+            [
+                'action'     => 'read',
+            ]
+        );
+
+        $this->add(
+            '/updateform/{custid}',
+            [
+                'action'     => 'updateform',
+            ]
+        );
+
+        $this->add(
+            '/update',
+            [
+                'action'     => 'update',
+            ]
+        );
+
+        $this->add(
+            '/delete/{custid}',
+            [
+                'action'     => 'delete',
             ]
         );
     }

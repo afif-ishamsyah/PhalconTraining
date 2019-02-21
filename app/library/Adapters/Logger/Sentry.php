@@ -14,6 +14,7 @@ use Phalcon\Config;
 use Phalcon\Logger;
 use Raven_Client;
 
+
 /**
  * The Sentry logger adapter for phalcon.
  */
